@@ -2,6 +2,7 @@ import GlobalStyles from "./styles/globalStyles";
 import { SideBar } from "./components/SideBar";
 import { Header } from "./components/Header";
 import { ContentHeader } from "./components/ContentHeader";
+import { VideoContent } from "./components/VideoContent";
 
 function App() {
   return (
@@ -13,6 +14,7 @@ function App() {
         >
           <Header />
           <ContentHeader />
+          <VideoContent />
         </div>
       </div>
       <GlobalStyles />
