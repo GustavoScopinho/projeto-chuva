@@ -17,7 +17,9 @@ export function ContentHeader() {
             <S.DownloadIcon />
             <S.DownloadText>Download</S.DownloadText>
           </S.DownloadButton>
-          <S.SmallButton>
+          <S.SmallButton
+            style={{ marginLeft: "0.5rem", marginRight: "0.5rem" }}
+          >
             <S.StarIcon />
           </S.SmallButton>
           <S.SmallButton>

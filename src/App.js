@@ -3,6 +3,7 @@ import { SideBar } from "./components/SideBar";
 import { Header } from "./components/Header";
 import { ContentHeader } from "./components/ContentHeader";
 import { VideoContent } from "./components/VideoContent";
+import { Details } from "./components/Details";
 
 function App() {
   return (
@@ -14,7 +15,10 @@ function App() {
         >
           <Header />
           <ContentHeader />
-          <VideoContent />
+          <div style={{ display: "flex", justifyContent: "space-between" }}>
+            <VideoContent />
+            <Details />
+          </div>
         </div>
       </div>
       <GlobalStyles />
