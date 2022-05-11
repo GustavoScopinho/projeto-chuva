@@ -1,4 +1,4 @@
-import styled, { css } from "styled-components";
+import styled from "styled-components";
 
 import { FaGlobe } from "react-icons/fa";
 import { IoMdArrowDropdown } from "react-icons/io";
