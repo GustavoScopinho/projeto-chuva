@@ -11,7 +11,9 @@ export const Container = styled.div`
   font-family: "Roboto";
 `;
 
-export const TitleContainer = styled.div``;
+export const TitleContainer = styled.div`
+  margin-right: 5rem;
+`;
 
 export const Title = styled.p`
   color: #ed7839;
