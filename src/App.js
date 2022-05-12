@@ -7,6 +7,7 @@ import { ContentHeader } from "./components/ContentHeader";
 import { VideoContent } from "./components/VideoContent";
 import { Details } from "./components/Details";
 import { Summary } from "./components/Summary";
+import { Discussions } from "./components/Discussions";
 
 function App() {
   return (
@@ -22,6 +23,8 @@ function App() {
             <VideoContent />
             <Details />
           </div>
+          <Summary />
+          <Discussions />
           <Summary />
         </div>
       </div>
