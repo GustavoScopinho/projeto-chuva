@@ -1,8 +1,10 @@
 import styled from "styled-components";
 
+import { BsPlusLg } from "react-icons/bs";
+
 export const InfoTtile = styled.p`
   display: flex;
-  justify-content: center;
+  text-align: center;
   margin-top: 0.938rem;
   font-family: "Roboto";
   font-style: normal;
@@ -12,11 +14,18 @@ export const InfoTtile = styled.p`
   color: #ed7839;
 `;
 
-export const Subtitle = styled.span`
+export const IconsContainer = styled.div`
   display: flex;
   justify-content: center;
-  align-self: center;
-  width: 100%;
+  margin-top: 1.688rem;
+`;
+
+export const Icon = styled.img``;
+
+export const Subtitle = styled.span`
+  display: flex;
+  text-align: center;
+  width: auto;
   margin-top: 2.188rem;
   font-family: "Quicksand";
   font-style: normal;
@@ -25,24 +34,6 @@ export const Subtitle = styled.span`
   line-height: 1.188rem;
   text-align: center;
   color: #595959;
-`;
-
-export const Link = styled.span`
-  display: flex;
-  justify-content: center;
-  align-self: center;
-  width: 100%;
-  margin-top: 1.813rem;
-  margin-bottom: 2.938rem;
-  font-family: "Quicksand";
-  font-style: normal;
-  font-weight: 500;
-  font-size: 0.875rem;
-  line-height: 137.5%;
-  text-align: center;
-  text-decoration-line: underline;
-  color: #f48f44;
-  cursor: pointer;
 `;
 
 export const ButtonContainer = styled.div`
@@ -60,7 +51,7 @@ export const Button = styled.div`
   justify-content: space-evenly;
   align-items: center;
   margin-bottom: -0.938rem;
-  width: 14.697rem;
+  width: 8.313rem;
   height: 2rem;
   background-image: linear-gradient(180deg, #feb254 0%, #f0813d 100%);
   box-shadow: 0rem 0rem 0.125rem rgba(0, 0, 0, 0.12),
@@ -68,6 +59,12 @@ export const Button = styled.div`
   border-radius: 0.25rem;
   z-index: 1;
   cursor: pointer;
+`;
+
+export const PlusIcon = styled(BsPlusLg)`
+  color: #fff;
+  width: 1.063rem;
+  height: 1.063rem;
 `;
 
 export const ButtonText = styled.p`

@@ -3,19 +3,20 @@ import styled from "styled-components";
 export const InfoTtile = styled.p`
   display: flex;
   justify-content: center;
+  text-align: center;
+  width: 100%;
   margin-top: 0.938rem;
   font-family: "Roboto";
   font-style: normal;
   font-weight: 700;
-  font-size: 1.125rem;
+  font-size: 1.025rem;
   line-height: 1.313rem;
   color: #ed7839;
 `;
 
 export const Subtitle = styled.span`
   display: flex;
-  justify-content: center;
-  align-self: center;
+  text-align: center;
   width: 100%;
   margin-top: 2.188rem;
   font-family: "Quicksand";
@@ -30,8 +31,6 @@ export const Subtitle = styled.span`
 export const Link = styled.span`
   display: flex;
   justify-content: center;
-  align-self: center;
-  width: 100%;
   margin-top: 1.813rem;
   margin-bottom: 2.938rem;
   font-family: "Quicksand";

@@ -11,8 +11,6 @@ const menuItems = [
   "Contato",
 ];
 
-console.log(menuItems[0]);
-
 export function SideBar() {
   return (
     <S.Container>

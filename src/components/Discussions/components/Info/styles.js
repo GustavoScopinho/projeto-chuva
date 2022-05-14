@@ -24,8 +24,8 @@ export const Icon = styled.img``;
 
 export const Subtitle = styled.span`
   display: flex;
-  align-self: center;
-  width: 39.125rem;
+  justify-content: center;
+  width: 100%;
   margin-top: 2.188rem;
   font-family: "Quicksand";
   font-style: normal;
