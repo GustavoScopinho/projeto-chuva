@@ -1,6 +1,11 @@
-import styled from "styled-components";
+import styled, { css } from "styled-components";
+
+export const Wrapper = styled.div`
+  position: relative;
+`;
 
 export const Container = styled.div`
+  position: relative;
   height: 9.25rem;
   margin-left: 1.096rem;
   margin-right: 1.096rem;
@@ -9,6 +14,54 @@ export const Container = styled.div`
   border: 0.063rem solid #e7e7e7;
   box-shadow: 0rem 0rem 0.5rem rgba(0, 0, 0, 0.12);
   border-radius: 0.25rem;
+
+  ${(props) => {
+    if (props.blurred) {
+      return css`
+        filter: blur(4px);
+        background-color: #dddddd;
+        opacity: 0.4;
+      `;
+    }
+  }}
+`;
+
+export const TopicImg = styled.img`
+  position: absolute;
+  top: 35px;
+  left: 50%;
+  right: 50%;
+`;
+
+export const TitleOverBlur = styled.p`
+  position: absolute;
+  top: 66px;
+  left: 42%;
+  right: 55%;
+  width: 414.29px;
+  text-align: left;
+  font-family: "Quicksand";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 20px;
+  color: #707070;
+`;
+
+export const Link = styled.p`
+  position: absolute;
+  top: 94px;
+  left: 48%;
+  right: 55%;
+  width: 122.12px;
+  font-family: "Segoe UI";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 19px;
+  text-decoration-line: underline;
+  color: #ed7839;
+  cursor: pointer;
 `;
 
 export const Title = styled.p`

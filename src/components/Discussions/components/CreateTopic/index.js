@@ -5,9 +5,11 @@ import * as S from "./styles";
 import italic from "../../assets/italic.svg";
 import bold from "../../assets/bold.svg";
 
-export function CreateTopic() {
+export function CreateTopic(props) {
   const [boldSelected, setBoldSelected] = useState(false);
   const [italicSelected, setItalicSelected] = useState(false);
+  const [pressed, setPressed] = useState(false);
+  props.func(pressed);
   return (
     <>
       <S.TopicHelp>
@@ -39,7 +41,9 @@ export function CreateTopic() {
               onClick={() => setItalicSelected(!italicSelected)}
             ></S.StyleButton>
           </S.StyleTextContainer>
-          <S.ButtonContainer>Enviar</S.ButtonContainer>
+          <S.ButtonContainer onClick={() => setPressed(true)}>
+            Enviar
+          </S.ButtonContainer>
         </S.SubmitContainer>
         <S.Division />
       </S.TopicContainer>

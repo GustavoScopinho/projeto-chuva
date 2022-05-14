@@ -6,6 +6,7 @@ export const Container = styled.div`
   margin-right: 2.813rem;
   min-height: 11.813rem;
   border: 0.063rem solid #cecece;
+  box-shadow: 0rem 0rem 0.5rem rgba(0, 0, 0, 0.12);
 `;
 
 export const TitleContainer = styled.div`
