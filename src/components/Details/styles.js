@@ -1,13 +1,15 @@
 import styled, { css } from "styled-components";
 import { Scrollbars } from "react-custom-scrollbars";
 
+import { isMobile } from "react-device-detect";
+
 export const Container = styled.div`
   display: flex;
   flex-direction: column;
   height: 27.438rem;
   width: 15.125rem;
   margin-top: 1.188rem;
-  margin-right: 2.813rem;
+  margin-right: ${!isMobile && "2.813rem"};
   border: 0.063rem solid #ececec;
   border-radius: 0.188rem;
 `;

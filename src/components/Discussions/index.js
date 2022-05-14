@@ -4,11 +4,25 @@ import * as S from "./styles";
 import { Info } from "./components/Info";
 import { CreateTopic } from "./components/CreateTopic";
 import { Subject } from "./components/Subject";
+import { CreatedTopic } from "./components/CreatedTopic";
 
 export function Discussions() {
   const [showCreateTopic, setShowCreateTopic] = useState(false);
-  const pull_data = (data) => {
+  const [showPostedTopic, setShowPostedTopic] = useState(false);
+
+  const pull_info = (data) => {
     setShowCreateTopic(data);
+  };
+
+  const pull_topic = (data) => {
+    setShowPostedTopic(data);
+  };
+
+  const pull_created = (data) => {
+    if (data) {
+      setShowCreateTopic(false);
+      setShowPostedTopic(false);
+    }
   };
 
   return (
@@ -17,10 +31,19 @@ export function Discussions() {
         <S.Title>Discussões</S.Title>
       </S.TitleContainer>
       <S.InfosContainer>
-        {showCreateTopic ? <CreateTopic /> : <Info func={pull_data} />}
+        {showCreateTopic ? (
+          showPostedTopic ? (
+            <CreatedTopic func={pull_created} />
+          ) : (
+            <CreateTopic func={pull_topic} />
+          )
+        ) : (
+          <Info func={pull_info} />
+        )}
       </S.InfosContainer>
+      {showPostedTopic && <Subject blurred />}
       <Subject />
-      <Subject />
+      <Subject hasReply />
     </S.Container>
   );
 }

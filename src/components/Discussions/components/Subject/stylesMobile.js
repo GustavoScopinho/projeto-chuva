@@ -6,10 +6,11 @@ export const Wrapper = styled.div`
 
 export const Container = styled.div`
   position: relative;
-  height: 9.25rem;
+  height: auto;
   margin-left: 1.096rem;
   margin-right: 1.096rem;
   margin-bottom: 1.063rem;
+  padding-right: 0.5rem;
   background: #ffffff;
   border: 0.063rem solid #e7e7e7;
   box-shadow: 0rem 0rem 0.5rem rgba(0, 0, 0, 0.12);
@@ -36,14 +37,14 @@ export const TopicImg = styled.img`
 export const TitleOverBlur = styled.p`
   position: absolute;
   top: 66px;
-  left: 42%;
+  left: 10%;
   right: 55%;
-  width: 414.29px;
-  text-align: left;
+  width: 90%;
+  text-align: center;
   font-family: "Quicksand";
   font-style: normal;
   font-weight: 700;
-  font-size: 16px;
+  font-size: 14px;
   line-height: 20px;
   color: #707070;
 `;
@@ -51,7 +52,7 @@ export const TitleOverBlur = styled.p`
 export const Link = styled.p`
   position: absolute;
   top: 94px;
-  left: 48%;
+  left: 38%;
   right: 55%;
   width: 122.12px;
   font-family: "Segoe UI";
@@ -65,6 +66,7 @@ export const Link = styled.p`
 `;
 
 export const Title = styled.p`
+  text-align: center;
   margin-left: 1.511rem;
   margin-top: 1.063rem;
   font-family: "Quicksand";
@@ -77,7 +79,7 @@ export const Title = styled.p`
 
 export const Name = styled.p`
   margin-left: 1.511rem;
-  margin-top: 0.188rem;
+  margin-top: 0.488rem;
   font-family: "Quicksand";
   font-style: normal;
   font-weight: 500;
@@ -106,6 +108,7 @@ export const Footer = styled.div`
   width: 10.313rem;
   margin-left: 1.511rem;
   margin-top: 0.688rem;
+  margin-bottom: 0.688rem;
 `;
 
 export const DotsIcon = styled.img`

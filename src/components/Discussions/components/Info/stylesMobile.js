@@ -4,7 +4,7 @@ import { BsPlusLg } from "react-icons/bs";
 
 export const InfoTtile = styled.p`
   display: flex;
-  justify-content: center;
+  text-align: center;
   margin-top: 0.938rem;
   font-family: "Roboto";
   font-style: normal;
@@ -24,8 +24,8 @@ export const Icon = styled.img``;
 
 export const Subtitle = styled.span`
   display: flex;
-  justify-content: center;
-  width: 100%;
+  text-align: center;
+  width: auto;
   margin-top: 2.188rem;
   font-family: "Quicksand";
   font-style: normal;
